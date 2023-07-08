@@ -19,11 +19,11 @@ const Latihan =() => {
 
     return(
         <div>
-            <div className="w-[70%] mx-auto mt-16 p-5 bg-ungu flex text-white items-center rounded-b-2xl">
+            <div className="lg:w-[70%] md:w-[70%] mx-auto mt-16 p-5 bg-ungu flex text-white items-center rounded-b-2xl">
                 <i class="fa-solid fa-arrow-left fa-lg"></i>
                 <p className="mx-auto">Latihan Kamu</p>
             </div>
-            <div className="grid grid-cols-2 w-[30%] mx-auto text-sm mt-10">
+            <div className="grid grid-cols-2 lg:w-[30%] md:w-[30%] w-[70%] mx-auto text-sm mt-10">
                 <button 
                     id="onclick"
                     onClick={() => handleCategoryChange('Paket-Soal')}
@@ -37,7 +37,7 @@ const Latihan =() => {
                         Try Out
                 </button>
             </div>
-            <div className="w-[50%] mx-auto  mt-5">
+            <div className="lg:w-[50%] w-[70%] mx-auto  mt-5">
                 {visibleImages.map(item => (
                 <div>
                     <p className="text-center text-sm mt-2">{item.bannerNoPaket}</p>

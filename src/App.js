@@ -8,12 +8,13 @@ import SKD from './pages/Skd';
 import LatihanGratis from './pages/Latihan-Gratis';
 import Nilai from './pages/Nilai';
 import NotFound from './components/NotFound';
+import PopUp from './components/PopUp';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={ <> <Navbar/><Home/> </>} />
+        <Route path='/' element={ <> <Navbar/><Home/><PopUp/> </>} />
         <Route path='/skd' element={ <> <Navbar/> <SKD/> </> } />
         <Route path='/skd/try-out-gratis' element={ <> <Navbar/><LatihanGratis/> </> } />
         <Route path='/skd/try-out-gratis/nilai' element={ <> <Navbar/><Nilai/> </> } />

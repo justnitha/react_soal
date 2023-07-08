@@ -116,14 +116,8 @@ const Quiz = () => {
     };
   }, [timeTaken]);
   
-
-  
-  
-  
-
-  
   return (
-    <div className=' w-[70%] mx-auto mt-10'>
+    <div className='lg:w-[70%] mx-auto mt-10'>
       <div className="mt-12 bg-ungu  mx-auto text-center p-5 pb-10 text-white rounded-b-3xl">
         <h1 className=" uppercase text-xs font-bold  tracking-wider">soal berbasis skd cat</h1>
         <h1 className="text-xs font-bold  tracking-wider text-[#f7cc74]">Try Out Gratis</h1>
@@ -132,8 +126,8 @@ const Quiz = () => {
       </div>
       
       {currentQuestion < Questions.length ? (
-        <div className='mt-10'>
-          <p className='px-2 rounded-lg  bg-[#d9eae2] text-[#429470] font-bold w-[13%] text-center capitalize'>{Questions[currentQuestion].name}</p>
+        <div className='mt-10 px-10 lg:px-0'>
+          <p className='px-2 rounded-lg  bg-[#d9eae2] text-[#429470] font-bold lg:w-[13%] w-[29%] text-center capitalize'>{Questions[currentQuestion].name}</p>
           <div className='flex gap-2 items-center tracking-wider mt-2 mb-2'>soal nomor : <p className='bg-green-500 text-white px-2 py-1 text-xs rounded-full'>{Questions[currentQuestion].id}</p> </div>
           <hr />
           <p className='mt-2'>{Questions[currentQuestion].question}</p>
@@ -164,18 +158,18 @@ const Quiz = () => {
         <div>
 
         {/* untuk button nombor */}
-        <div className='flex justify-between mt-6 text-sm text-white px-5'>
+        <div className='flex justify-between mt-6 gap-5 lg:gap-0 text-sm text-white px-5'>
             <div>
-                <button  onClick={handleQuizFinish} className='bg-[#429470] px-5 py-3 rounded-2xl'>Selesai Ujian</button>
+                <button  onClick={handleQuizFinish} className='bg-[#429470] px-5 text-xs lg:text-base py-3 rounded-2xl'>Selesai Ujian</button>
             </div>
             <div>
             {/* Tombol "Selesai Ujian" hanya ditampilkan jika ini adalah pertanyaan terakhir */}
               {currentQuestion === Questions.length - 1 ? (
-              <button onClick={handleQuizFinish} className='bg-pink-400 px-5 py-3 rounded-2xl'>Finish</button>
+              <button onClick={handleQuizFinish} className='bg-pink-400 px-5 text-xs lg:text-base py-3 rounded-2xl'>Finish</button>
             ) : (
               <div className='gap-3 flex'>
-                <button onClick={handleSkipQuestion} className='bg-[#3849b9] px-6 py-3 rounded-2xl'>Simpan & Lanjutkan</button>
-                <button onClick={handleSkipQuestion} className='bg-[#f3ae3d] px-6 py-3 rounded-2xl'>Lewati Soal</button>
+                <button onClick={handleSkipQuestion} className='bg-[#3849b9] text-xs lg:text-base px-6 py-3 rounded-2xl'>Simpan & Lanjutkan</button>
+                <button onClick={handleSkipQuestion} className='bg-[#f3ae3d] text-xs lg:text-base px-6 py-3 rounded-2xl'>Lewati Soal</button>
               </div>
             )
             }
@@ -196,13 +190,13 @@ const Quiz = () => {
             </div>
         </div>
         {/* untuk nomor perpindahan soal */}
-          <div className='grid grid-cols-10 gap-3 mt-10'>
+          <div className='grid grid-cols-5 sm:grid-cols-7 md:grid-cols-8 lg:grid-cols-10 gap-3 mt-10'>
           {Questions.map((question, index) => (
             <button
               key={question.id}
               className={
-                          `question-button ${answeredQuestions[index] ? 'answered' : ''} ${
-                          question.id === Questions[currentQuestion].id ? 'active' : ''}`
+                          `question-button rounded-[150px] py-[14px] sm:py-[17px] sm:text-2xl  px-[20px] text-white text-center  ${answeredQuestions[index] ? 'answered' : ''} ${
+                          question.id === Questions[currentQuestion].id ? 'active' : ' '}`
                         }
               onClick={() => {
                 handleQuestionById(question.id);

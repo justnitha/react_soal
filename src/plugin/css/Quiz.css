@@ -1,13 +1,13 @@
 .question-button{
     background-color:#b32553;
-    border-radius:120px;
-    padding:25px;
+    /* border-radius:120px;
+    padding:21px; */
     color:white;
 }
 .question-button.active{
     background-color:#b32553;
-    border-radius:120px;
-    padding:25px;
+    /* border-radius:120px;
+    padding:21px; */
     border-color:black;
 }
 
@@ -23,6 +23,13 @@ button.skip-button {
 .question-button2{
     background-color:#3849b9;
     border-radius:150px;
-    padding:21px;
+    padding:26px 20px;
     color:white;
+}
+.question-button3{
+    background-color:#3849b9;
+    border-radius:150px;
+    padding:14px 20px ;
+    color:white;
+    text-align:center;
 }

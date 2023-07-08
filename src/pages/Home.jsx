@@ -5,24 +5,25 @@ const Home =() => {
    
     return(
         <div>
-            <div className="container h-[40vh] rounded-b-3xl w-[70%] py-5 px-10 mx-auto bg-ungu mt-14">
+            <div className="container h-[40vh] rounded-b-3xl lg:w-[70%] py-5 px-10 mx-auto bg-ungu mt-14">
                 <p className="text-white text-2xl font-bold tracking-wide">Hi kamu</p>
                 <p className="text-white"> Selamat Belajar!</p>
-                <img src={require ("../plugin/img/banner.jpg")} alt="imgage" className="mt-7 rounded-2xl" />
+                <img src={require ("../plugin/img/banner.jpg")} alt="imgage" className="mt-7 rounded-2xl h-[9.4rem] sm:h-[13rem] md:h-[16rem] lg:h-[18rem]" />
             </div>
-            <PopUp/>
-            <div className="grid grid-cols-4 mt-40 gap-7 w-[50%] mx-auto ">
-                <div>
+            {/* <PopUp/> */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 mt-14 md:mt-32 lg:mt-40 gap-7 w-[50%] mx-auto">
+                <div className="w-[120%] sm:w-[60%] md:w-[45%] lg:w-[70%]">
                     <Link to="/skd">
                     <button  className="bg-[#4ba2e0] p-6 rounded-3xl drop-shadow-lg">
-                        <i class="fa-solid fa-book-open fa-5x text-white"></i>
+                        <i class="fa-solid fa-book-open  fa-3x  text-white"></i>
                     </button>
-                    <p className=" uppercase mt-5 text-center">SKD</p>
+                    <p className=" uppercase mt-5 text-center ">SKD</p>
                     </Link>
                 </div>
-                <div>
-                    <button className="bg-[#f5c242] p-5 rounded-3xl">
-                        <img src={ require ("../plugin/img/logo-lampu.png")} alt="skb" className="mx-auto" />
+                <div className="w-[120%] sm:w-[60%] md:w-[45%] lg:w-[70%]">
+                    <button className=" bg-[#f5c242] p-6 rounded-3xl">
+                        {/* <img src={ require ("../plugin/img/logo-lampu.png")} alt="skb" className="mx-auto " /> */}
+                        <i class="fa-solid fa-sun fa-3x text-white"></i>
                     </button>
                     <p className=" uppercase mt-5 text-center">skb</p>
                 </div>
@@ -52,10 +53,10 @@ const Home =() => {
                 </div> */}
             </div>
            {/* Program kelas */}
-           <div className="w-[65%] mx-auto mt-16">
-                <h1 className="text-2xl font-semibold">Program kelas</h1>
+           <div className="lg:w-[65%] sm:px-12 md:px-24 lg:px-0 mx-auto mt-10 lg:mt-16">
+                <h1 className="text-2xl font-semibold ps-5 lg:ps-0">Program kelas</h1>
                 <div className="flex bg-ungu p-5 gap-5 items-center rounded-2xl text-white mt-8">
-                    <div className="w-[50%]">
+                    <div className="w-[50%] hidden lg:block">
                         <img src={require ('../plugin/img/iconnn.jpg')} alt="gambar"className="rounded-2xl" />
                     </div>
                     <div>
@@ -69,9 +70,9 @@ const Home =() => {
                 </div>
            </div>
            {/* mau tahu */}
-            <div className="w-[65%] mx-auto mt-5 py-4">
+            <div className="lg:w-[65%] sm:px-12 md:px-24 lg:px-0 px-5 mx-auto mt-5 py-4">
                 <h1 className="text-2xl font-semibold">Mau tahu Sekolah Kedinasan yang tepat untuk kamu?</h1>
-                <p className="text-lg">ketahui sekolah kedinasan,peta persaingan tiap jurusan dan perkiraan status kesehatan sesuai data diri kamu</p>
+                <p className="text-lg mt-3 lg:mt-0">ketahui sekolah kedinasan,peta persaingan tiap jurusan dan perkiraan status kesehatan sesuai data diri kamu</p>
                 <img src={ require ("../plugin/img/banner-2.jpg")} alt="banner" className="mt-7 rounded-2xl pb-2" />
             </div>
         </div>
