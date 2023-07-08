@@ -1,0 +1,28 @@
+.question-button{
+    background-color:#b32553;
+    border-radius:120px;
+    padding:25px;
+    color:white;
+}
+.question-button.active{
+    background-color:#b32553;
+    border-radius:120px;
+    padding:25px;
+    border-color:black;
+}
+
+button.skip-button {
+  background-color: #e0e0fb;
+  color: #3849b9;
+}
+
+.question-button.answered {
+  background-color: #3849b9;
+  color: #fff;
+}
+.question-button2{
+    background-color:#3849b9;
+    border-radius:150px;
+    padding:21px;
+    color:white;
+}

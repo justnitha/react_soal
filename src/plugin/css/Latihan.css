@@ -1,0 +1,17 @@
+#onclick{
+    backgroun-color:#edeef0;
+    padding: 7px 0 ;
+   
+}
+#onclick:hover{
+    background-color:#6263e9;
+    color:white;
+   
+   
+}
+#onclick.activee {
+    background-color:#6263e9;
+    color:white;
+    
+}
+
