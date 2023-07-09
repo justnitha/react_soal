@@ -36,27 +36,27 @@ const Nilai = () => {
       SetKata("Buruk Sekali");
       SetClass("font-bold text-red-700")
       SetFont("font-bold text-red-700 text-5xl")
-      SetKartu("absolute bg-white border-2 border-red-700 lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-red-700 lg:w-[30%] w-[45%] top-[83vh] md:mt-[120px] lg:top-[80vh] sm:top-[50vh] mx-auto p-2 text-center inset-1 h-[9rem]   ")
     } else if (score <= 30) {
       SetKata("Buruk")
       SetClass("font-bold text-orange-300")
       SetFont("font-bold text-orange-300 text-5xl")
-      SetKartu("absolute bg-white border-2 border-orange-300 lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-orange-300 lg:w-[30%] w-[45%] top-[83vh] md:mt-[120px] lg:top-[80vh] sm:top-[50vh] mx-auto p-2 text-center inset-1 h-[9rem]   ")
     } else if (score <= 50) {
       SetKata("Cukup")
       SetClass("font-bold text-[#6527BE]")
       SetFont("font-bold text-[#6527BE] text-5xl")
-      SetKartu("absolute bg-white border-2 border-[#6527BE] lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-[#6527BE] lg:w-[30%] w-[45%] top-[83vh] md:mt-[120px] lg:top-[80vh] sm:top-[50vh] mx-auto p-2 text-center inset-1 h-[9rem]   ")
     } else if(score <=80) {
       SetKata("Greet");
       SetClass("font-bold text-[#5A96E3]")
       SetFont("font-bold text-[#5A96E3] text-5xl")
-      SetKartu("absolute bg-white border-2 border-[#5A96E3] lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-[#5A96E3] lg:w-[30%] w-[45%] top-[83vh] md:mt-[120px] lg:top-[80vh] sm:top-[50vh] mx-auto p-2 text-center inset-1 h-[9rem]   ")
     } else if(score <= 100) {
       SetKata("Kerja Bagus")
       SetClass("font-bold text-[#429470]")
       SetFont("font-bold text-[#429470] text-5xl")
-      SetKartu("absolute bg-white border-2 border-[#429470] lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-[#429470] lg:w-[30%] w-[45%] top-[83vh] md:mt-[120px] lg:top-[80vh] sm:top-[50vh] mx-auto p-2 text-center inset-1 h-[9rem]   ")
     }
   }) 
 
@@ -76,10 +76,10 @@ const Nilai = () => {
 
   return (
     <div className='h-[800px]'>
-      <div className='mt-14 lg:w-[70%] md:w-[80%] mx-auto bg-ungu h-[50vh] rounded-b-3xl'>
+      <div className='mt-14 lg:w-[70%] md:w-[80%] sm:h-[40vh] mx-auto bg-ungu h-[50vh] rounded-b-3xl'>
         <div className='lg:w-[50%] mx-auto pt-10'>
           <h1 className='text-center text-white font-semibold'>{Nama}</h1>
-          <div className='flex bg-white lg:w-[44%] sm:w-[32%] w-[50%] mx-auto justify-center items-center text-sm p-2 rounded-xl mt-3'>
+          <div className='flex bg-white lg:w-[47%] sm:w-[32%] w-[50%]  mx-auto justify-center items-center text-sm p-2 rounded-xl mt-3'>
             <button
               id='nilaiButton'
               onClick={handleNilaiClick}
@@ -103,18 +103,18 @@ const Nilai = () => {
       </div>
       {showPembahasan ? (
         // Pembahasan
-        <div className='bg-white lg:w-[70%] lg:mx-auto mt-5 lg:mt-0 sm:w-[80%] sm:inset-0 sm:h-[120vh] sm:rounded-2xl sm:top-[40vh]  w-full mx-auto absolute top-[40vh] lg:left-[11.69rem] sm:mx-auto md:w-[70%] md:mx-auto   shadow-xl'>
+        <div className='bg-white lg:w-[70%] lg:h-50vh lg:mx-auto mt-5 lg:mt-0 sm:w-[80%] sm:inset-0 sm:h-[120vh] sm:rounded-2xl sm:top-[40vh]  w-full mx-auto absolute top-[40vh]  sm:mx-auto md:w-[70%] md:mx-auto   shadow-xl'>
           {/* Kode pembahasan soal */}
           <Pembahasan/>
 
         </div>
       ) : (
       <div>
-        <div className='bg-white lg:w-[50%] sm:w-[65%] md:w-[50%] mx-auto absolute top-[40vh] lg:left-[20rem] sm:left-[8rem] md:left-[14rem] left-[2rem] rounded-2xl shadow-xl sm:text-sm lg:text-base'>
+        <div className='bg-white mt-5  lg:w-[50%] sm:w-[65%] md:w-[50%] mx-auto absolute inset-0 top-[40vh] md:top-[47vh] sm:top-[25vh] md:h-[70vh] sm:h-[30vh] h-[50vh]  rounded-2xl shadow-xl sm:text-sm lg:text-base'>
           <h1 className='text-center p-3 text-2xl text-ungu'>Raport</h1>
-          <p className='text-center p-3 text-white bg-[#b32553] w-[65%] rounded-2xl mx-auto mb-4'>Waktu Pengerjaan: {timeTaken}</p>
+          <div className='text-center p-3 text-white bg-[#b32553] w-[65%] rounded-2xl mx-auto mb-4'><p>Waktu Pengerjaan:</p> <span>{timeTaken}</span> </div>
           <hr style={{ height: '3px', backgroundColor: '#d9dbe8', border: 'none', margin: '5px auto',width:'90%',borderRadius:'30px'}}  />
-          <div className='w-[80%] mx-auto mt-4 flex justify-between lg:items-center items-start text-center pb-5'>
+          <div className='w-[80%] mx-auto mt-4 flex justify-between lg:items-center  items-start text-center pb-5'>
             <div className='w-[20%]'>
               <h1>Jumlah Soal</h1>
               <p className='bg-[#e8e8fc] text-[#6263ea] lg:py-5 mt-2 rounded-3xl w-[65%] mx-auto'>{totalQuestions}</p>

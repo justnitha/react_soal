@@ -41,9 +41,9 @@ const Countdown = ({ quizCompleted, onTimeUpdate }) => {
     );
 };
     return (
-        <div className='lg:w-[40%] sm:w-[50%] md:w-[50%] w-[70%] mx-auto text-center '>
+        <div className='lg:w-[40%] sm:w-[50%] md:w-[50%] w-[75%] mx-auto text-center  '>
           <h2 className='text-xs'>Sisa waktu</h2>
-            <p className='bg-white  py-1 rounded-xl text-black'>
+            <p className='bg-white  py-1  rounded-xl text-black mt-2'>
                 {countdownTime >= 0 ? formatTime(countdownTime) : '00:00:00'}
             </p>
         </div>

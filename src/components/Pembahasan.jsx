@@ -102,7 +102,7 @@ const Pembahasan= () => {
               </div>
           </div> */}
           {/* untuk nomor perpindahan soal */}
-            <div className='grid sm:w-[70%] md:w-[80%] mx-auto grid-cols-5 lg:grid-cols-10 gap-3 mt-6'>
+            <div className='grid sm:w-[70%] md:w-[80%] lg:w-full mx-auto grid-cols-5 lg:grid-cols-10 gap-3 mt-6'>
             {Questions.map((question, index) => (
               <button
                 key={question.id}

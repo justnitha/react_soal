@@ -24,7 +24,7 @@ const PopUp =() =>{
     return(
         <div>
             {pop && (
-                <div className="bg-black bg-opacity-30 absolute top-0 w-full h-screen  z-10 ">
+                <div className="bg-black bg-opacity-30 absolute top-0 w-full h-[190vh]  z-10 ">
                     <div className="bg-white lg:w-[25%] w-[50%] md:w-[30%] mx-auto mt-[40vh] rounded-2xl">
                         <div className="p-5 text-center">
                             <h1 className="font-bold">Aktifkan Notifikasi</h1>

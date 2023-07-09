@@ -5,7 +5,7 @@ const Home =() => {
    
     return(
         <div>
-            <div className="container h-[40vh] rounded-b-3xl lg:w-[70%] py-5 px-10 mx-auto bg-ungu mt-14">
+            <div className="container lg:h-[40vh] h-[30vh] rounded-b-3xl lg:w-[70%] py-5 px-10 mx-auto bg-ungu mt-14">
                 <p className="text-white text-2xl font-bold tracking-wide">Hi kamu</p>
                 <p className="text-white"> Selamat Belajar!</p>
                 <img src={require ("../plugin/img/banner.jpg")} alt="imgage" className="mt-7 rounded-2xl h-[9.4rem] sm:h-[13rem] md:h-[16rem] lg:h-[18rem]" />
