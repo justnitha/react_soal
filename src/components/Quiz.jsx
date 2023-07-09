@@ -158,7 +158,7 @@ const Quiz = () => {
         <div>
 
         {/* untuk button nombor */}
-        <div className='flex justify-between mt-6 gap-5 lg:gap-0 text-sm text-white px-5'>
+        <div className='lg:flex grid sm:flex grid-cols-3 justify-between mt-6 gap-5 lg:gap-0 text-sm text-white lg:px-5'>
             <div>
                 <button  onClick={handleQuizFinish} className='bg-[#429470] px-5 text-xs lg:text-base py-3 rounded-2xl'>Selesai Ujian</button>
             </div>
@@ -190,12 +190,12 @@ const Quiz = () => {
             </div>
         </div>
         {/* untuk nomor perpindahan soal */}
-          <div className='grid grid-cols-5 sm:grid-cols-7 md:grid-cols-8 lg:grid-cols-10 gap-3 mt-10'>
+          <div className='grid grid-cols-5 sm:w-[80%] md:w-full lg:w-[90%] sm:mx-auto md:grid-cols-10 lg:grid-cols-10 gap-3 mt-10'>
           {Questions.map((question, index) => (
             <button
               key={question.id}
               className={
-                          `question-button rounded-[150px] py-[14px] sm:py-[17px] sm:text-2xl  px-[20px] text-white text-center  ${answeredQuestions[index] ? 'answered' : ''} ${
+                          `question-button rounded-[150px] py-[14px]  sm:py-[17px] sm:w-[100%] sm:text-xl  px-[20px] text-white text-center  ${answeredQuestions[index] ? 'answered' : ''} ${
                           question.id === Questions[currentQuestion].id ? 'active' : ' '}`
                         }
               onClick={() => {

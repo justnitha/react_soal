@@ -102,11 +102,11 @@ const Pembahasan= () => {
               </div>
           </div> */}
           {/* untuk nomor perpindahan soal */}
-            <div className='grid sm:grid-cols-7 grid-cols-5 lg:grid-cols-10 gap-3 mt-6'>
+            <div className='grid sm:w-[70%] md:w-[80%] mx-auto grid-cols-5 lg:grid-cols-10 gap-3 mt-6'>
             {Questions.map((question, index) => (
               <button
                 key={question.id}
-                className={question.id === Questions[currentQuestion].id ? 'bg-[#3849b9] rounded-[150px] py-[14px] sm:py-[17px] sm:text-2xl  px-[20px] text-white text-center' : ' sm:py-[17px] sm:text-2xl bg-[#3849b9] rounded-[150px] py-[14px] px-[20px] text-white text-center'}
+                className={question.id === Questions[currentQuestion].id ? 'bg-[#3849b9] rounded-[150px] py-[14px] sm:py-[17px]   px-[20px] text-white text-center' : ' sm:py-[17px]  bg-[#3849b9] rounded-[150px] py-[14px] px-[20px] text-white text-center'}
                           
                 onClick={() => {
                   handleQuestionById(question.id);

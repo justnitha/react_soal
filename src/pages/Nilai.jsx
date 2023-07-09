@@ -36,27 +36,27 @@ const Nilai = () => {
       SetKata("Buruk Sekali");
       SetClass("font-bold text-red-700")
       SetFont("font-bold text-red-700 text-5xl")
-      SetKartu("absolute bg-white border-2 border-red-700 lg:w-[30%] w-[40%] top-[80vh] left-[8.4rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-red-700 lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
     } else if (score <= 30) {
       SetKata("Buruk")
       SetClass("font-bold text-orange-300")
       SetFont("font-bold text-orange-300 text-5xl")
-      SetKartu("absolute bg-white border-2 border-orange-300 lg:w-[30%] w-[40%] top-[80vh] left-[8.4rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-orange-300 lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
     } else if (score <= 50) {
       SetKata("Cukup")
       SetClass("font-bold text-[#6527BE]")
       SetFont("font-bold text-[#6527BE] text-5xl")
-      SetKartu("absolute bg-white border-2 border-[#6527BE] lg:w-[30%] w-[40%] top-[80vh] left-[8.4rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-[#6527BE] lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
     } else if(score <=80) {
       SetKata("Greet");
       SetClass("font-bold text-[#5A96E3]")
       SetFont("font-bold text-[#5A96E3] text-5xl")
-      SetKartu("absolute bg-white border-2 border-[#5A96E3] lg:w-[30%] w-[40%] top-[80vh] left-[8.4rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-[#5A96E3] lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
     } else if(score <= 100) {
       SetKata("Kerja Bagus")
       SetClass("font-bold text-[#429470]")
       SetFont("font-bold text-[#429470] text-5xl")
-      SetKartu("absolute bg-white border-2 border-[#429470] lg:w-[30%] w-[40%] top-[80vh] left-[8.4rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
+      SetKartu("absolute bg-white border-2 border-[#429470] lg:w-[30%] w-[40%] top-[80vh] left-[7rem] sm:left-[13.5rem] md:left-[17rem]  lg:left-[28rem] p-2 text-center")
     }
   }) 
 
@@ -103,14 +103,14 @@ const Nilai = () => {
       </div>
       {showPembahasan ? (
         // Pembahasan
-        <div className='bg-white lg:w-[70%]   mx-auto absolute top-[40vh] lg:left-[11.69rem] sm:w-full md:w-[70%] md:left-[9.2rem]  shadow-xl'>
+        <div className='bg-white lg:w-[70%] lg:mx-auto mt-5 lg:mt-0 sm:w-[80%] sm:inset-0 sm:h-[120vh] sm:rounded-2xl sm:top-[40vh]  w-full mx-auto absolute top-[40vh] lg:left-[11.69rem] sm:mx-auto md:w-[70%] md:mx-auto   shadow-xl'>
           {/* Kode pembahasan soal */}
           <Pembahasan/>
 
         </div>
       ) : (
       <div>
-        <div className='bg-white lg:w-[50%] sm:w-[65%] mx-auto absolute top-[40vh] lg:left-[20rem] sm:left-[8rem] md:left-[9.7rem] left-[3.2rem] rounded-2xl shadow-xl sm:text-sm lg:text-base'>
+        <div className='bg-white lg:w-[50%] sm:w-[65%] md:w-[50%] mx-auto absolute top-[40vh] lg:left-[20rem] sm:left-[8rem] md:left-[14rem] left-[2rem] rounded-2xl shadow-xl sm:text-sm lg:text-base'>
           <h1 className='text-center p-3 text-2xl text-ungu'>Raport</h1>
           <p className='text-center p-3 text-white bg-[#b32553] w-[65%] rounded-2xl mx-auto mb-4'>Waktu Pengerjaan: {timeTaken}</p>
           <hr style={{ height: '3px', backgroundColor: '#d9dbe8', border: 'none', margin: '5px auto',width:'90%',borderRadius:'30px'}}  />
@@ -121,11 +121,11 @@ const Nilai = () => {
             </div>
             <div className='w-[20%]'>
             <h1>Benar</h1>
-            <p className='bg-[#e8e8fc] text-[#6263ea] lg:py-5 lg:mt-2 rounded-3xl w-[65%] mx-auto mt-8 md:mt-2'>{correctAnswers}</p>
+            <p className='bg-[#e8e8fc] text-[#6263ea] lg:py-5 lg:mt-2 rounded-3xl w-[65%] mx-auto mt-8 md:mt-7'>{correctAnswers}</p>
             </div>
             <div className='w-[20%]'>
             <h1>Salah</h1>
-            <p className='bg-[#e8e8fc] text-[#6263ea] lg:py-5 lg:mt-2 rounded-3xl w-[65%] mx-auto mt-8 md:mt-2'>{incorrectAnswers}</p>
+            <p className='bg-[#e8e8fc] text-[#6263ea] lg:py-5 lg:mt-2 rounded-3xl w-[65%] mx-auto mt-8 md:mt-7'>{incorrectAnswers}</p>
             </div>
           </div>
         </div>
