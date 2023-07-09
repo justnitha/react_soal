@@ -158,25 +158,22 @@ const Quiz = () => {
         <div>
 
         {/* untuk button nombor */}
-        <div className='lg:flex grid sm:flex grid-cols-3 justify-between mt-6 gap-5 lg:gap-0 text-sm text-white lg:px-5'>
+        <div className='flex  items-center justify-between mt-6 gap-5 lg:gap-0 text-sm text-white lg:px-5'>
             <div>
-                <button  onClick={handleQuizFinish} className='bg-[#429470] px-5 text-xs lg:text-base py-3 rounded-2xl'>Selesai Ujian</button>
+                <button  onClick={handleQuizFinish} className='bg-[#429470] px-5 text-xs lg:text-base py-3 sm:py-5 rounded-2xl'>Selesai Ujian</button>
             </div>
             <div>
             {/* Tombol "Selesai Ujian" hanya ditampilkan jika ini adalah pertanyaan terakhir */}
               {currentQuestion === Questions.length - 1 ? (
-              <button onClick={handleQuizFinish} className='bg-pink-400 px-5 text-xs lg:text-base py-3 rounded-2xl'>Finish</button>
+              <button onClick={handleQuizFinish} className='bg-pink-400 px-5 ms-auto text-xs lg:text-base  py-3 sm:py-5 rounded-2xl'>Finish</button>
             ) : (
               <div className='gap-3 flex'>
-                <button onClick={handleSkipQuestion} className='bg-[#3849b9] text-xs lg:text-base px-6 py-3 rounded-2xl'>Simpan & Lanjutkan</button>
-                <button onClick={handleSkipQuestion} className='bg-[#f3ae3d] text-xs lg:text-base px-6 py-3 rounded-2xl'>Lewati Soal</button>
+                <button onClick={handleSkipQuestion} className='bg-[#3849b9] text-xs lg:text-base px-6 py-3 sm:py-5 rounded-2xl'>Simpan & Lanjutkan</button>
+                <button onClick={handleSkipQuestion} className='bg-[#f3ae3d] text-xs lg:text-base px-6 py-3 sm:py-5 rounded-2xl'>Lewati Soal</button>
               </div>
             )
             }
             </div>
-            {/* <div className='flex gap-5'>
-                <button onClick={handleSkipQuestion} className='bg-[#3849b9] px-6 py-3 rounded-2xl'>Simpan & Lanjutkan</button>
-            </div> */}
         </div>
         <hr className='mt-10 ' style={{ height: '10px', backgroundColor: '#f4f4f4', border: 'none', margin: '20px auto' }}  />
         <div className='flex justify-between mt-5'>
