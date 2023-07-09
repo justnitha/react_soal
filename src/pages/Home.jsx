@@ -11,7 +11,7 @@ const Home =() => {
                 <img src={require ("../plugin/img/banner.jpg")} alt="imgage" className="mt-7 rounded-2xl h-[9.4rem] sm:h-[13rem] md:h-[16rem] lg:h-[18rem]" />
             </div>
             {/* <PopUp/> */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 mt-14 md:mt-32 lg:mt-40 gap-7 w-[50%] mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 mt-20 md:mt-32 lg:mt-40 gap-7 w-[50%] mx-auto">
                 <div className="w-[120%] sm:w-[60%] md:w-[45%] lg:w-[70%]">
                     <Link to="/skd">
                     <button  className="bg-[#4ba2e0] p-6 rounded-3xl drop-shadow-lg">

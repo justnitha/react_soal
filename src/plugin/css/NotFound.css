@@ -1,0 +1,26 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating {
+    animation: rotate 2s infinite linear;
+  }
+
+@keyframes putar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .revers-rotate {
+    animation: putar 2s infinite linear;
+  }
+  
